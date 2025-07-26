@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lazeez Kitchen Menu</title>
+  <style>
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #000;
+      color: #fff;
+    }
+
+    .menu-container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+      animation: fadeIn 1.2s ease-in-out;
+    }
+
+    h1 {
+      text-align: center;
+      color: yellow;
+    }
+
+    .section {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+      gap: 10px;
+    }
+
+    .category {
+      flex: 1 1 300px;
+      background: #111;
+      padding: 20px;
+      border-radius: 10px;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    
+
+    .category h2 {
+      color: orange;
+      border-bottom: 2px solid #444;
+      padding-bottom: 5px;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .category h2 img {
+      width: 30px;
+      height: 30px;
+    }
+
+    .item {
+      display: flex;
+      justify-content: space-between;
+      padding: 5px 0;
+    }
+
+    .extra {
+      color: #ffd700;
+      font-size: 0.9em;
+      margin-top: 10px;
+    }
+
+    .dips {
+      font-size: 0.9em;
+      margin-top: 10px;
+      color:  #ffd700;
+    }
+
+    .menu-table {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 0.5rem;
+      font-size: 1rem;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    .menu-header {
+      font-weight: bold;
+      background-color: #f8f8f8;
+      padding: 0.5rem 0;
+      border-bottom: 2px solid #ccc;
+      display: contents;
+    }
+
+    .menu-row {
+      display: contents;
+    }
+
+    .menu-item-name {
+      text-align: left;
+      padding-left: 0.5rem;
+    }
+    .momo-card h3{
+      color: orange;
+      margin-bottom: 10px;
+    }
+    .momo-card ul li{
+      display: flex;
+      justify-content: space-between;
+      padding: 5px 0;
+    
+    }
+  </style>
+</head>
+
+<body>
+  <div class="menu-container">
+    <h1>LAZEEZ KITCHEN'S MENU</h1>
+    <div class="section">
+      <div class="category">
+        <h2><img src="https://img.icons8.com/emoji/48/hamburger-emoji.png" alt="Burger" />BURGERS</h2>
+        <div class="item"><span>Aloo Tikki Burger</span><span>₹40</span></div>
+        <div class="item"><span>Crispy Veg Burger</span><span>₹60</span></div>
+        <div class="item"><span>Veg Cheese Burger</span><span>₹70</span></div>
+        <div class="item"><span>Spicy Mexican Burger</span><span>₹80</span></div>
+        <div class="item"><span>Cheesilicious Burger</span><span>₹80</span></div>
+        <div class="item"><span>Zinger Paneer Burger</span><span>₹90</span></div>
+        <div class="item"><span>Double Decker Burger</span><span>₹100</span></div>
+        <div class="item"><span>Maharaja Burger</span><span>₹120</span></div>
+        <div class="extra">Extra: Cheese Slice ₹20 | Veggie Patty ₹30</div>
+      </div>
+      <div class="category">
+        <h2><img src="https://img.icons8.com/?size=100&id=108387&format=png&color=000000" alt="Rolls" />ROLLS</h2>
+        <div class="item"><span>Veg Kathi Roll</span><span>₹70</span></div>
+        <div class="item"><span>Aachari Kathi Roll</span><span>₹80</span></div>
+        <div class="item"><span>Classic Veg Roll</span><span>₹90</span></div>
+        <div class="item"><span>Crispy Paneer Roll</span><span>₹100</span></div>
+        <div class="item"><span>Cheesy Veggie Roll</span><span>₹100</span></div>
+        <div class="item"><span>Garlic Paneer Roll</span><span>₹120</span></div>
+        <div class="item"><span>Tandoori Paneer Roll</span><span>₹120</span></div>
+        <div class="extra">Extra: Cheese Slice ₹20 | Veggie Patty ₹30</div>
+      </div>
+      <div class="category">
+        <h2><img src="https://img.icons8.com/emoji/48/taco-emoji.png" alt="Taco" />TACOS</h2>
+        <div class="item"><span>Peri Peri Taco</span><span>₹80</span></div>
+        <div class="item"><span>Aachari Taco</span><span>₹80</span></div>
+        <div class="item"><span>Veg Garlic Taco</span><span>₹90</span></div>
+        <div class="item"><span>Mexican Taco</span><span>₹90</span></div>
+        <div class="item"><span>Cheesy Taco</span><span>₹100</span></div>
+        <div class="item"><span>Paneer Makhni Taco</span><span>₹100</span></div>
+        <div class="extra">Extra: Cheese Slice ₹20 | Veggie Patty ₹30</div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="category">
+        <h2><img src="https://img.icons8.com/emoji/48/pizza-emoji.png" alt="Pizza" />PIZZA</h2>
+        <div class="item"><span>Margherita Pizza</span><span>₹100</span></div>
+        <div class="item"><span>Cheese & Corn Pizza</span><span>₹130</span></div>
+        <div class="item"><span>Cheese & Paneer Pizza</span><span>₹150</span></div>
+        <div class="item"><span>Veg Mexican Pizza</span><span>₹150</span></div>
+        <div class="item"><span>Farm Fresh Pizza</span><span>₹170</span></div>
+        <div class="item"><span>Veggie Delight Pizza</span><span>₹170</span></div>
+        <div class="item"><span>Paneer Paradise Pizza</span><span>₹170</span></div>
+        <div class="item"><span>Kadhai Paneer Pizza</span><span>₹180</span></div>
+        <div class="item"><span>Peri Peri Paneer Pizza</span><span>₹200</span></div>
+        <div class="item"><span>Loaded Cheese Pizza</span><span>₹200</span></div>
+        <div class="extra">Extra: Cheese ₹30 | Cheese Burst ₹50</div>
+      </div>
+      <div class="category">
+        <h2><img src="https://img.icons8.com/?size=100&id=MSeo0pcLeg0A&format=png&color=000000" alt="Fries" />FRENCH
+          FRIES (S/M/L)</h2>
+        <div class="item"><span>Salted French Fries</span><span>₹50 / ₹80 / ₹120</span></div>
+        <div class="item"><span>Masala French Fries</span><span>₹50 / ₹90 / ₹130</span></div>
+        <div class="item"><span>Peri Peri French Fries</span><span>₹60 / ₹100 / ₹140</span></div>
+        <div class="item"><span>Cheesy French Fries</span><span>₹70 / ₹110 / ₹150</span></div>
+        <div class="item"><span>Messy French Fries</span><span>₹80 / ₹120 / ₹160</span></div>
+        <div class="item"><span>Mexican Cheesy Nachos</span><span>₹90 / ₹130 / ₹170</span></div>
+        <div class="item"><span>Mexican Messy Nachos</span><span>₹90 / ₹120 / ₹160</span></div>
+        <div class="dips">Dips: Cheese, Mayo, Peri Peri, Chipotle, Garlic, Schezwan — ₹20</div>
+      </div>
+      <div class="category">
+        <h2><img src="https://img.icons8.com/?size=100&id=HwIEsEmuCUlw&format=png&color=000000"
+            alt="Sandwich" />SANDWICH</h2>
+        <div class="item"><span>Coleslaw Sandwich</span><span>₹100</span></div>
+        <div class="item"><span>Corn & Peas Sandwich</span><span>₹100</span></div>
+        <div class="item"><span>Veggie Loaded Sandwich</span><span>₹120</span></div>
+        <div class="item"><span>Crispy Paneer Sandwich</span><span>₹120</span></div>
+        <div class="item"><span>Veg Cheesy Sandwich</span><span>₹120</span></div>
+        <div class="item"><span>Tandoori Paneer Sandwich</span><span>₹150</span></div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="category">
+        <h2><img src="https://img.icons8.com/?size=100&id=4drDCWePbmsO&format=png&color=000000"
+            alt="MOCKTAILS" />MOCKTAILS</h2>
+        <div class="item"><span>Virgin Mint Mojito</span><span>₹80</span></div>
+        <div class="item"><span>Blue Lagoon Mojito</span><span>₹80</span></div>
+        <div class="item"><span>Green Apple Mojito</span><span>₹80</span></div>
+        <div class="item"><span>Kala Khatta Mojito</span><span>₹80</span></div>
+        <div class="item"><span>Kacchi Kairi Mojito</span><span>₹80</span></div>
+        <div class="item"><span>Masala Cola Mojito</span><span>₹80</span></div>
+        <div class="item"><span>Fizzy Citric Orange</span><span>₹80</span></div>
+        <div class="item"><span>Spiced Guava Mojito</span><span>₹80</span></div>
+        <div class="item"><span>Lemongrass & Ginger</span><span>₹90</span></div>
+        <div class="item"><span>Blueberry & Lemon</span><span>₹90</span></div>
+      </div>
+      <div class="category">
+        <h2><img src="https://img.icons8.com/?size=100&id=34671&format=png&color=000000" alt="BEVERAGES" />BEVERAGES
+        </h2>
+        <div class="item"><span>Hot Coffee</span><span>₹25</span></div>
+        <div class="item"><span>Hot Chocolate</span><span>₹35</span></div>
+        <div class="item"><span>Cold Coffee</span><span>₹70</span></div>
+        <div class="item"><span>Chocolate Cold Coffee</span><span>₹80</span></div>
+        <div class="item"><span>Caramel Cold Coffee</span><span>₹80</span></div>
+        <div class="item"><span>Hazelnut Cold Coffee</span><span>₹80</span></div>
+        <div class="item"><span>Pineapple Milkshake</span><span>₹80</span></div>
+        <div class="item"><span>Strawberry Milkshake</span><span>₹80</span></div>
+        <div class="item"><span>Butterscotch Caramel</span><span>₹80</span></div>
+        <div class="item"><span>Chocolate Milkshake</span><span>₹80</span></div>
+        <div class="item"><span>Choco-Oreo Milkshake</span><span>₹90</span></div>
+        <div class="item"><span>Choco-Brownie Milkshake</span><span>₹90</span></div>
+        <div class="item"><span>Death by Chocolate Shake</span><span>₹150</span></div>
+      </div>
+      <div class="category">
+        <h2><img src="https://img.icons8.com/?size=100&id=SENAO5gAbChk&format=png&color=000000"
+            alt="Super Combos" />SUPER COMBOS</h2>
+        <div class="item"><span>Cheese Burger + Peri Peri Fries</span><span>₹99</span></div>
+        <div class="item"><span>Cheese Burger + Fries + Drink + Dip</span><span>₹149</span></div>
+        <div class="item"><span>Cheese Burger + Fries + Cold Coffee</span><span>₹199</span></div>
+        <div class="item"><span>Crispy Paneer Roll + Fries + Cheesy Dip</span><span>₹149</span></div>
+        <div class="item"><span>Mexican Pizza + Taco + Cold Drink</span><span>₹199</span></div>
+        <div class="item"><span>Paneer Paradise Pizza + Paneer Makhni Taco</span><span>₹249</span></div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="category">
+        <h2><img src="https://img.icons8.com/?size=100&id=13316&format=png&color=000000" alt="Dessert" />DESSERT</h2>
+        <div class="item"><span>Choco Lava Cake</span><span>₹90</span></div>
+        <div class="item"><span>Hot Chocolate Brownie</span><span>₹70</span></div>
+        <div class="item"><span>Brownie Ice Cream</span><span>₹80</span></div>
+        <div class="item"><span>Chocolate Sundae</span><span>₹90</span></div>
+        <div class="item"><span>Vanilla Fruit Sundae</span><span>₹90</span></div>
+      </div>
+
+      <div class="category">
+        <h2>
+          <img src="https://img.icons8.com/?size=100&id=26096&format=png&color=000000" alt="Momos" />
+          MOMOS (6 Pieces)
+        </h2>
+
+
+
+        <div class="momo-card">
+          <h3>Veggie Momos</h3>
+          <ul>
+            <li><span>Steamed</span><span>₹70</span></li>
+            <li><span>Fried</span><span>₹80</span></li>
+            <li><span>Kurkure</span> <span>₹90</span></li>
+            <li><span>Gravy</span> <span>₹100</span></li>
+          </ul>
+        </div>
+
+        <div class="momo-card">
+          <h3>Paneer Momos</h3>
+          <ul>
+            <li><span>Steamed</span><span>₹80</span></li>
+            <li><span>Fried</span><span>₹90</span></li>
+            <li><span>Kurkure</span> <span>₹100</span></li>
+            <li><span>Gravy</span> <span>₹110</span></li>
+          </ul>
+        </div>
+
+        <div class="momo-card">
+          <h3>Cheese Corn Momos</h3>
+          <ul>
+            <li><span>Steamed</span><span>₹90</span></li>
+            <li><span>Fried</span><span>₹100</span></li>
+            <li><span>Kurkure</span> <span>₹110</span></li>
+            <li><span>Gravy</span> <span>₹120</span></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="category">
+        <h2><img src="https://img.icons8.com/?size=100&id=YkrAUKSblonr&format=png&color=000000" alt="Pasta" />PASTA</h2>
+        <div class="item"><span>White Sauce Pasta</span><span>₹120</span></div>
+        <div class="item"><span>Red Sauce Pasta</span><span>₹120</span></div>
+        <div class="item"><span>Mix Sauce Pasta</span><span>₹120</span></div>
+        <div class="item"><span>Mac & Cheese Pasta</span><span>₹150</span></div>
+        <div class="item"><span>Basil Pesto Pasta</span><span>₹150</span></div>
+        <div class="item"><span>Paneer Makhani Pasta</span><span>₹150</span></div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
